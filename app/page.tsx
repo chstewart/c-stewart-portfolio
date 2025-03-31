@@ -4,7 +4,7 @@ import { socialLinks } from "./config";
 export default function Page() {
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
+      <a href={socialLinks.linkedin} target="_blank">
         <Image
           src="/profile.png"
           alt="Profile photo"
@@ -16,46 +16,35 @@ export default function Page() {
         />
       </a>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio template!
+        Chris Stewart
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS.
+        Results-driven Automation Engineer with over 10 years of experience designing and
+        implementing scalable test automation solutions. Adept at leading cross-functional teams
+        and wearing multiple hats (QA, DevOps, Backend/Frontend Development, PM, Dev Lead) to
+        drive efficiency and innovation.
         </p>
         <p>
-          Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS,
-          Atom & JSON feeds, analytics, Tweet & YouTube embeds, KaTeX and {""}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
-          </a>
-          .
+          I am most known for my QA and automation testing but have developed a passion
+          for front end development over the years.
         </p>
         <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
+          If you'd like to get in touch with me head over to
+          {" "}
+          <a href={socialLinks.linkedin} target="_blank">
+            LinkedIn
           </a>{" "}
-          and fully customizable, making it easy to add more features.
-        </p>
-        <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
+          or send me an
+          {" "}
+          <a href={socialLinks.email} target="_blank">
+            Email
+          </a>{""}.
         </p>
         <p>
           Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
+          <a href="https://c-stewart.com/" target="_blank">
+            Chris Stewart
           </a>
           .
         </p>

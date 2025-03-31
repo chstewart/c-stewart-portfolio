@@ -3,6 +3,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  transpilePackages: ["next-mdx-remote"],
+  webpack: (config) => {
+    config.resolve.alias.canvas = false;
+    
+    return config;
+  },
   async rewrites() {
     return [
       {

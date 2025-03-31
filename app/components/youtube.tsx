@@ -1,6 +1,7 @@
 "use client";
 import YT from "react-youtube";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function YouTubeComponent(props: any) {
   return (
     <div className="relative w-full h-0 pb-[56.25%] my-6">

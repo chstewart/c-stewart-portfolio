@@ -5,7 +5,7 @@ import { formatDate, getBlogPosts } from "app/lib/posts";
 import { metaData } from "app/config";
 
 export async function generateStaticParams() {
-  let posts = getBlogPosts();
+  const posts = getBlogPosts();
 
   return posts.map((post) => ({
     slug: post.slug,
@@ -16,18 +16,18 @@ export async function generateMetadata({
   params,
 }): Promise<Metadata | undefined> {
   const { slug } = await params;
-  let post = getBlogPosts().find((post) => post.slug === slug);
+  const post = getBlogPosts().find((post) => post.slug === slug);
   if (!post) {
     return;
   }
 
-  let {
+  const {
     title,
     publishedAt: publishedTime,
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image
+  const ogImage = image
     ? image
     : `${metaData.baseUrl}/og?title=${encodeURIComponent(title)}`;
 
@@ -46,18 +46,18 @@ export async function generateMetadata({
         },
       ],
     },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage],
-    },
+    // twitter: {
+    //   card: "summary_large_image",
+    //   title,
+    //   description,
+    //   images: [ogImage],
+    // },
   };
 }
 
 export default async function Blog({ params }) {
   const { slug } = await params;
-  let post = getBlogPosts().find((post) => post.slug === slug);
+  const post = getBlogPosts().find((post) => post.slug === slug);
 
   if (!post) {
     notFound();
