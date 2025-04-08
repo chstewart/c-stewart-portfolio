@@ -1,8 +1,8 @@
-# Nextfolio
+# c-stewart-portfolio
 
 A clean, fast, and lightweight portfolio template built with [Next.js](https://nextjs.org/), [Vercel](https://vercel.com/), and [Tailwind CSS](https://tailwindcss.com/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2Fc-stewart-portfolio)
 
 ## Technologies Used
 
@@ -17,7 +17,7 @@ A clean, fast, and lightweight portfolio template built with [Next.js](https://n
 - **Light and Dark Mode Toggle**: Switch between themes for better readability.
 - **Dynamic [OG Images](https://vercel.com/docs/functions/og-image-generation)**: Auto-generate Open Graph images for sharing.
 - **SEO Optimization**: Enhance search visibility with sitemap, robots.txt, and JSON-LD schema.
-- **Dynamic Feed Generation**: Automatic dynamic [RSS](https://nextfolio-template.vercel.app/rss.xml), [Atom](https://nextfolio-template.vercel.app/atom.xml), and [JSON](https://nextfolio-template.vercel.app/feed.json) feeds.
+- **Dynamic Feed Generation**: Automatic dynamic [RSS](https://c-stewart-portfolio-template.vercel.app/rss.xml), [Atom](https://c-stewart-portfolio-template.vercel.app/atom.xml), and [JSON](https://c-stewart-portfolio-template.vercel.app/feed.json) feeds.
 - **[KaTeX](https://katex.org/) Integration**: Render mathematical expressions smoothly.
 - **Performance Tracking**: Monitor web performance with [Vercel Web Analytics](https://vercel.com/docs/speed-insights) and [Speed Insights](https://vercel.com/docs/speed-insights).
 - **Interactive Embeds**: Easily embed interactive tweets and YouTube videos.
@@ -26,12 +26,12 @@ A clean, fast, and lightweight portfolio template built with [Next.js](https://n
 
 ## Installation
 
-Nextfolio uses [pnpm](https://pnpm.io/installation) for dependency management, so ensure it is installed on your system.
+c-stewart-portfolio uses [pnpm](https://pnpm.io/installation) for dependency management, so ensure it is installed on your system.
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
 
 ```
-pnpm create next-app --example https://github.com/1msirius/Nextfolio my-portfolio
+pnpm create next-app --example https://github.com/1msirius/c-stewart-portfolio my-portfolio
 ```
 
 Start the development server:
@@ -48,7 +48,7 @@ The server will be running at [http://localhost:3000](http://localhost:3000).
 2. Update your routes in `app/sitemap.ts` for SEO optimization.
 3. Update your blog posts in the `/content` folder.
 
-For more information about configuration, follow the instructions in the [Getting Started](https://nextfolio-template.vercel.app/blog/getting-started#configuration) post.
+For more information about configuration, follow the instructions in the [Getting Started](https://c-stewart-portfolio-template.vercel.app/blog/getting-started#configuration) post.
 
 ## Contributing
 
@@ -56,4 +56,4 @@ Contributions are welcome! To get involved, just push your code to the repo. Whe
 
 ## Licence
 
-Nextfolio is open-source and released under the MIT License.
+c-stewart-portfolio is open-source and released under the MIT License.
