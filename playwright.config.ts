@@ -1,4 +1,5 @@
-import { defineConfig, devices } from '@playwright/test';
+import { config as dotenvConfig } from 'dotenv';
+import { devices, PlaywrightTestConfig } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -11,7 +12,9 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-export default defineConfig({
+dotenvConfig();
+
+const config: PlaywrightTestConfig = {
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -19,7 +22,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    //baseURL: 'http://127.0.0.1:3000',
+    baseURL: process.env.BASE_URL,
     trace: 'on-first-retry',
   },
 
@@ -66,4 +69,6 @@ export default defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-});
+};
+
+export default config;
