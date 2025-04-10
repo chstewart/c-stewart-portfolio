@@ -36,6 +36,7 @@ const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
   }
   return (
     <section>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">Resume</h1>
       {/* <h1 className="mb-8 text-2xl font-medium tracking-tight">Resume</h1> */}
       <div ref={setContainerRef}>
       <Document file="Chris_Stewart_Resume_2025.pdf" onLoadSuccess={onDocumentLoadSuccess}>
