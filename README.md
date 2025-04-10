@@ -1,13 +1,13 @@
 # c-stewart-portfolio
 
-A clean, fast, and lightweight portfolio template built with [Next.js](https://nextjs.org/), [Vercel](https://vercel.com/), and [Tailwind CSS](https://tailwindcss.com/).
+This is my personal portfolio app built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) and [Playwright](https://playwright.dev/) for testing.
 
 ## Technologies Used
 
 - Framework: [Next.js](https://nextjs.org/)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
-- Analytics: [Vercel Web Analytics](https://vercel.com/docs/speed-insights) and [Speed Insights](https://vercel.com/docs/speed-insights)
-- Deployment: [Vercel](https://vercel.com/)
+- Deployment: [Heroku](https://www.heroku.com/)
+- Testing: [Playwright](https://playwright.dev/)
 
 ## Features
 
@@ -17,7 +17,6 @@ A clean, fast, and lightweight portfolio template built with [Next.js](https://n
 - **SEO Optimization**: Enhance search visibility with sitemap, robots.txt, and JSON-LD schema.
 - **Dynamic Feed Generation**: Automatic dynamic [RSS](https://c-stewart-portfolio-template.vercel.app/rss.xml), [Atom](https://c-stewart-portfolio-template.vercel.app/atom.xml), and [JSON](https://c-stewart-portfolio-template.vercel.app/feed.json) feeds.
 - **[KaTeX](https://katex.org/) Integration**: Render mathematical expressions smoothly.
-- **Performance Tracking**: Monitor web performance with [Vercel Web Analytics](https://vercel.com/docs/speed-insights) and [Speed Insights](https://vercel.com/docs/speed-insights).
 - **Interactive Embeds**: Easily embed interactive tweets and YouTube videos.
 - **Captions**: Add descriptive captions to photos, tweets, and videos.
 - **Image Grid**: Easily showcase image galleries or photos.
@@ -26,10 +25,10 @@ A clean, fast, and lightweight portfolio template built with [Next.js](https://n
 
 c-stewart-portfolio uses [pnpm](https://pnpm.io/installation) for dependency management, so ensure it is installed on your system.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+Clone the repo and then:
 
 ```
-pnpm create next-app --example https://github.com/1msirius/c-stewart-portfolio my-portfolio
+pnpm install
 ```
 
 Start the development server:
@@ -46,7 +45,7 @@ The server will be running at [http://localhost:3000](http://localhost:3000).
 2. Update your routes in `app/sitemap.ts` for SEO optimization.
 3. Update your blog posts in the `/content` folder.
 
-For more information about configuration, follow the instructions in the [Getting Started](https://c-stewart-portfolio-template.vercel.app/blog/getting-started#configuration) post.
+This project will likely diverge from the original template this was based off of. If you like the template head over to get the original [Nextfolio](https://github.com/1msirius/Nextfolio).
 
 ## Contributing
 
