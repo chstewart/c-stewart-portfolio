@@ -1,13 +1,14 @@
 name: Playwright Tests
 on:
   deployment_status:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      pages: write
     env:
       BASE_URL: ${{ vars.BASE_URL }}
     if: github.event.deployment_status.state == 'success'
@@ -40,9 +41,6 @@ jobs:
     #   uses: actions/deploy-pages@v4
   deploy:
     needs: test
-    permissions:
-      pages: write
-      id-token: write
     environment:
       name: github-pages
       url: ${\{ steps.deployment.outputs.page_url }}
